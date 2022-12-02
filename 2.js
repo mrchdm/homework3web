@@ -3,4 +3,11 @@
 // Необходимо у пользователя запросить имя 
 // и вызвать функцию greeting, передав туда данное значение.
 
-function greeting()
+let UserName = prompt('Enter your name, please');
+
+function greeting(name) {
+    text = (`Hello, ${name}`);
+    return text;
+}
+
+let result = alert(greeting(UserName));
